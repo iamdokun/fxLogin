@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="opacity">
+            <div class="login">
+                <span>Welcome Back</span>
+                <em><p>To keep connected with us please login with your user details</p></em>
+                <div class="loginOp">
+                    <div id="userchk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Usernamr/Email Required *</em></div>
+                    <input type="text" class="input" placeholder="Username or Email">
+                    <div id="passchk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Enter Password *</em></div>
+                    <input type="password" class="input" placeholder="Password">
+                    <input type="checkbox">
+                    <label for="">Remeber me<a href="#" id="forget">Forget Password</a></label>
+                    <br><br>
+                    <button id="loginButton">Login Now</button>
+                    <button id="btnReg">Create Account</button>
+                </div>
+            </div>
+            <div class="registration">
+                <span><hr> Join Us <hr></span>
+                <p><em>Create your account. It's free and only take a minute.</em></p>
+                <div class="regOp">
+                    <input type="text" class="regtext" placeholder="First Name">
+                    <input type="text" class="regtext" placeholder="Last Name">
+                    <input type="email" class="regtext" placeholder="Email: user@example.com">
+                    <input type="password" class="regtext" placeholder="Password">
+                    <input type="password" class="regtext" placeholder="Confirm Password">
+                    <input type="checkbox">
+                    <label for="">I accept the <a href="#" id="term"><em>Terms of Use & Privacy Policy.</em></a></label>
+                    <button id="btnReg2">Register Now</button><br>
+                    <label for="">Already have an account?<button id="btnLog">Login Now</button></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
