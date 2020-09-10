@@ -14,10 +14,10 @@
                 <span>Welcome Back</span>
                 <em><p>To keep connected with us please login with your user details</p></em>
                 <div class="loginOp">
-                    <div id="userchk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Usernamr/Email Required *</em></div>
-                    <input type="text" class="input" placeholder="Username or Email">
+                    <div id="userchk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Username/Email Required *</em></div>
+                    <input type="text" id="usernameLogin" class="input" placeholder="Username or Email">
                     <div id="passchk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Enter Password *</em></div>
-                    <input type="password" class="input" placeholder="Password">
+                    <input type="password" id="passwordLogin" class="input" placeholder="Password">
                     <input type="checkbox">
                     <label for="">Remeber me<a href="#" id="forget">Forget Password</a></label>
                     <br><br>
@@ -29,11 +29,16 @@
                 <span><hr> Join Us <hr></span>
                 <p><em>Create your account. It's free and only take a minute.</em></p>
                 <div class="regOp">
-                    <input type="text" class="regtext" placeholder="First Name">
-                    <input type="text" class="regtext" placeholder="Last Name">
-                    <input type="email" class="regtext" placeholder="Email: user@example.com">
-                    <input type="password" class="regtext" placeholder="Password">
-                    <input type="password" class="regtext" placeholder="Confirm Password">
+                    <div id="fnamechk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>First Name Required *</em></div>
+                    <input type="text" id="fnameId" class="regtext" placeholder="First Name">
+                    <div id="lnamechk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Last Name Required *</em></div>
+                    <input type="text" id="lnameId" class="regtext" placeholder="Last Name">
+                    <div id="emailchk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Email Required *</em></div>
+                    <input type="email" id="emailId" class="regtext" placeholder="Email: user@example.com" required>
+                    <div id="regpasschk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Create Password *</em></div>
+                    <input type="password" id="passwordId" class="regtext" placeholder="Password">
+                    <div id="cpasschk" style="font-size: 11px; color: #cd0a0a; display: none; "><em>Confirm Password *</em></div>
+                    <input type="password" id="cpassId" class="regtext" placeholder="Confirm Password">
                     <input type="checkbox">
                     <label for="">I accept the <a href="#" id="term"><em>Terms of Use & Privacy Policy.</em></a></label>
                     <button id="btnReg2">Register Now</button><br>
